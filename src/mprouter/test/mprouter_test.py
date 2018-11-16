@@ -49,6 +49,8 @@ class TestPRRoute(unittest.TestCase):
     def test_pr_route(self):
         journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, 1542387791)
         logging.debug("Got journeys: %s", journeys)
+        for j in journeys:
+            print(j)
         self.assertGreaterEqual(len(journeys), 2)
 
 
