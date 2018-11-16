@@ -20,9 +20,10 @@ class TestMapBox(unittest.TestCase):
         # In NL, on foot can be further than by bike
         assert sumcar.distance >= sumbike.distance #>= sumfoot.distance
 
-class Test92929(unittest.TestCase):
+
+class Test9292(unittest.TestCase):
     def test_route(self):
-        sumpt = mprouter.nl9292_route(longlat_tudelft, longlat_kijkduin)
+        sumpt = mprouter.nl9292_route(longlat_tudelft, longlat_kijkduin, 1542387791)
         logging.debug("9292 summary: %s", sumpt)
         assert sumpt.duration > 600 # at leat 10 min
         assert sumpt.price > 3 # €
@@ -31,6 +32,24 @@ class Test92929(unittest.TestCase):
         tudelft_id = mprouter.nl9292_get_location_id(longlat_tudelft)
         logging.debug("Got TUDelft ID = %s", tudelft_id)
         assert "delft" in tudelft_id
+
+
+class TestMonotch(unittest.TestCase):
+    def test_parking(self):
+        pks1km = mprouter.monotch_list_parkings(longlat_kijkduin, 1000)
+        logging.debug("Got parkings: %s", pks1km)
+        pks10km = mprouter.monotch_list_parkings(longlat_kijkduin, 10000)
+        logging.debug("Got parkings: %s", pks10km)
+        for p in pks10km:
+            print(p)
+        self.assertGreaterEqual(len(pks10km), len(pks1km))
+
+
+class TestPRRoute(unittest.TestCase):
+    def test_pr_route(self):
+        journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, 1542387791)
+        logging.debug("Got journeys: %s", journeys)
+        self.assertGreaterEqual(len(journeys), 2)
 
 
 if __name__ == "__main__":
