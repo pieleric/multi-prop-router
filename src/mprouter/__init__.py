@@ -21,16 +21,25 @@ except Exception:
 MAX_PARKING_DISTANCE = 4000 # m
 PARKING_TO_PT_TIME = 3 * 60 # s
 
+# http://www.carbonindependent.org/sources_bus.html
+CO2_PER_KM_CAR = 170 # g/km
+CO2_PER_KM_BUS = 90 # g/km
+CO2_PER_KM_TRAM = 0 # g/km
+
+# 1.5 (€/l) x 0.07 (l/km)
+PRICE_PER_KM_CAR = 0.1 # €
+
 # Note: we express all coordinates in longitude (float), latitude (float), as in GeoJSON
 
 class RouteSummary():
-    def __init__(self, profile, distance, duration, price=0, legs=None, depart_time=None, nbChanges=0, origin_id=None, destination_id=None, url=None):
+    def __init__(self, profile, distance, duration, price=0, co2=None, legs=None, depart_time=None, nbChanges=0, origin_id=None, destination_id=None, url=None):
         # TODO: distance is not important?
         self.profile = profile # "car", "bike", "foot" "taxi", "public-transport"...
         self.distance = distance # m
         self.depart_time = depart_time
         self.duration = duration # s
         self.price = price # €
+        self.co2 = co2
         #TODO define more properties to the route summary: "leisure"/agreability, "co2"....
         # => just automatically computed from the 3 inputs?
         # TODO: add some "legs" information to be able to display some kind of basic info about the trip?
@@ -38,12 +47,15 @@ class RouteSummary():
         self.nbChanges = nbChanges
         self.origin_id = origin_id
         self.destination_id = destination_id
-        self.url = None
+        self.url = url
         
     def to_struct(self):
         struct = {"duration": self.duration,
                   "price": self.price,
+                  "co2": self.co2,
                  }
+        if self.co2 is not None:
+            struct["co2"]= self.co2
         if self.url:
             struct["url"]= self.url
         return struct
@@ -66,6 +78,7 @@ class PRRouteSummary():
                   "duration_pt": self.pt.duration,
                   "price_pt": self.pt.price,
                   "url_pt": self.pt.url,
+                  "co2": self.car.co2 + self.pt.co2
                  }
         return struct
 
@@ -129,12 +142,12 @@ def pr_route(origin, destination, depart_time):
         try:
             # TODO; find the closest parking from the destination (and if it's not too far, use it to report the price with only car)
             # TODO: remove parkings which are really too close? Or just special case on foot?
-            a_to_p = mapbox_route(origin, p.coordinates, "car") # TODO: pass the depart_time?
+            a_to_p = mapbox_route(origin, p.coordinates, "car")
             a_to_p.url = create_gmap_url(origin, p.coordinates, "car")
         except Exception:
             logging.exception("Failed to get routing for A %s to %s", origin, p)
             continue
-            
+
         depart_time_p = depart_time + a_to_p.duration + PARKING_TO_PT_TIME
         try:
             p_to_b = nl9292_route(p.coordinates, destination, depart_time_p)
@@ -143,7 +156,7 @@ def pr_route(origin, destination, depart_time):
             # Can happen if it's too close
             logging.exception("Failed to get routing for P %s to %s", p, destination)
             continue
-        
+
         total_dur = a_to_p.duration + PARKING_TO_PT_TIME + p_to_b.duration
         total_price = a_to_p.price + p.price + p_to_b.price
         # When to leave at the latest (computed backwards based on the public transport)
@@ -177,6 +190,8 @@ def pr_route_address(origin_add, destination_add, depart_time):
     origin = mapbox_geocoder_fw(origin_add)
     destination = mapbox_geocoder_fw(destination_add)
     j_car = mapbox_route(origin, destination, "car")
+    # TODO: instead of just by car, we should also include the parking fee => find the closest parking and add it to the price (+time)
+    
     js_pr =  pr_route(origin, destination, depart_time)
     return j_car, js_pr
 
@@ -318,7 +333,7 @@ def monotch_get_parking_details(parking_id):
     return r
     
 
-# TODO: add support for the time of departue/arrival?
+# Note:: Mapbox v5 doesn't support the time of departue/arrival
 
 
 # Mapbox:
@@ -343,8 +358,14 @@ def mapbox_route(origin, destination, profile):
     # To get the whole geometry:
     # driving_routes = response.geojson()
 
-    # TODO price of the car by converting km -> gas -> €?
-    return RouteSummary(profile, route["distance"], route["duration"])
+    if profile == "car":
+        dist_km = route["distance"] / 1000
+        price = PRICE_PER_KM_CAR * dist_km
+        co2 = CO2_PER_KM_CAR * dist_km
+    else:
+        price = 0
+        co2 = 0
+    return RouteSummary(profile, route["distance"], route["duration"], price, co2)
 
 def mapbox_geocoder_fw(address):
     """
@@ -403,8 +424,10 @@ def nl9292_route(origin, destination, depart_time):
         price = 0
     legs = j["legs"]
     nbChanges = j["numberOfChanges"]
+    co2 = 0
+    # TODO: add for each leg of the journey which uses bus, the co2
     logging.debug("Found pt journey starting at %f, lasting %d m", departure, duration / 60)
-    return RouteSummary("public-transport", None, duration, price, legs, departure, nbChanges, origin_id, destination_id)
+    return RouteSummary("public-transport", None, duration, price, co2, legs, departure, nbChanges, origin_id, destination_id)
 
 def nl9292_time_to_epoch(t):
     """

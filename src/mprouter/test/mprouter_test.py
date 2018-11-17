@@ -23,6 +23,8 @@ class TestMapBox(unittest.TestCase):
         assert sumcar.duration < sumbike.duration < sumfoot.duration
         # In NL, on foot can be further than by bike
         assert sumcar.distance >= sumbike.distance #>= sumfoot.distance
+        assert sumcar.price > 0
+        assert sumcar.co2 > 0
         
     def test_geocoder_fw(self):
         dh = mprouter.mapbox_geocoder_fw(add_denhaag)
@@ -61,8 +63,8 @@ class TestMonotch(unittest.TestCase):
 class TestPRRoute(unittest.TestCase):
     def test_pr_route(self):
         departt = 1542387791 # 2018-11-16 @ 16:30
-        journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, departt)
-        #journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
+        #journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, departt)
+        journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
             print(j.to_struct())
@@ -79,7 +81,7 @@ class TestPRRoute(unittest.TestCase):
         #journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
-            print(j)
+            print(j.to_struct())
             print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
                   (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
         self.assertGreaterEqual(len(journeys), 2)
@@ -93,7 +95,7 @@ class TestPRRoute(unittest.TestCase):
         logging.debug("Just by car: %f km, %f min", car_only.distance/1000, car_only.duration / 60)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
-            print(j)
+            print(j.to_struct())
             print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
                   (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
         self.assertGreaterEqual(len(journeys), 2)

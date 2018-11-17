@@ -24,18 +24,25 @@ while response.status_code == 403:
 logging.debug("Got response: %s", response.content)
 r = response.json()
 
+json_sum = json.dumps(r, sort_keys=True, indent=4)
+f = open("monotch_parkings_2.json", "w+")
+f.write(json_sum)
+
 pks = dict(mprouter.MONOTCH_CACHE_PARKING_DETAILS)
-for pj in r:
-    pid = pj["id"]
-    if pid in pks:
-        continue
-    try:
-        p_details = mprouter.monotch_get_parking_details(pid)
-    except Exception:
-        logging.exception("Failed to get %s", pid)
-        continue
-    pks[pid] = p_details
-    
+try:
+    for pj in r:
+        pid = pj["id"]
+        if pid in pks:
+            continue
+        try:
+            p_details = mprouter.monotch_get_parking_details(pid)
+        except Exception:
+            logging.exception("Failed to get %s", pid)
+            continue
+        pks[pid] = p_details
+except KeyboardInterrupt:
+    pass
+
 fulls = json.dumps(pks, sort_keys=True, indent=4)
 f = open("monotch_parking_details.json", "w+")
 f.write(fulls)
