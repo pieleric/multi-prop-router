@@ -70,8 +70,8 @@ def get_bbox(position, radius):
     """
     return (4 float): long west, lat north, long east, lat south
     """
-    nw = geodistance(meters=radius).destination(Point(position[1], position[0]), 225)
-    se = geodistance(meters=radius).destination(Point(position[1], position[0]), 45)
+    nw = geodistance(meters=radius*1.4).destination(Point(position[1], position[0]), 225)
+    se = geodistance(meters=radius*1.4).destination(Point(position[1], position[0]), 45)
     return nw[1], nw[0], se[1], se[0]
 
 
@@ -102,6 +102,8 @@ def pr_route(origin, destination, depart_time):
     except Exception:
         logging.exception("Failed to get parkings for location %s", destination)
         raise
+
+    logging.debug("got %d parkings", len(pks_dest))
 
     # Compute for each parking the route
     full_journeys = []
@@ -201,6 +203,7 @@ def cache_monotch_list_parkings(position, radius):
         loc = float(pj["location"]["lng"]), float(pj["location"]["lat"])
         if get_distance(position, loc) > radius:
             logging.debug("Skipping parking %s which is too far", pid)
+            continue
         
         if pid in MONOTCH_CACHE_PARKING_DETAILS:
             p_details = monotch_get_parking_details(pid)
