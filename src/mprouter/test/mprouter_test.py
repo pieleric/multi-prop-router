@@ -8,6 +8,7 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 longlat_tudelft = (4.37212, 52.00234)
 longlat_kijkduin = (4.22200, 52.06965)
+longlat_denhaag = (4.31527, 52.08040) # Mauritzhuis
 
 
 class TestMapBox(unittest.TestCase):
@@ -47,11 +48,21 @@ class TestMonotch(unittest.TestCase):
 
 class TestPRRoute(unittest.TestCase):
     def test_pr_route(self):
-        journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, 1542387791)
+        departt = 1542387791 # 2018-11-16 @ 16:30
+        #journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, departt)
+        journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
             print(j)
+            print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
+                  (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
         self.assertGreaterEqual(len(journeys), 2)
+        for j in journeys:
+            self.assertGreater(j.depart_time, departt)
+        
+    def test_bbox(self):
+        bbox = mprouter.get_bbox(longlat_tudelft, 10000)
+        self.assertEqual(len(bbox), 4)
 
 
 if __name__ == "__main__":

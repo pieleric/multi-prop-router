@@ -7,20 +7,22 @@ import calendar
 import logging
 import os
 from geopy import Point
-from geopy.distance import distance, VincentyDistance
+from geopy.distance import distance as geodistance
 
 MONOTCH_KEY = open("monotch.key").readline().strip()
 os.environ["MAPBOX_ACCESS_TOKEN"] = open("mapbox.key").readline().strip()
 
 MAX_PARKING_DISTANCE = 10000
+PARKING_TO_PT_TIME = 3 * 60 # s
 
 # Note: we express all coordinates in longitude (float), latitude (float), as in GeoJSON
 
 class RouteSummary():
-    def __init__(self, profile, distance, duration, price=0, legs=None, nbChanges=0):
+    def __init__(self, profile, distance, duration, price=0, legs=None, depart_time=None, nbChanges=0, origin_id=None, destination_id=None):
         # TODO: distance is not important?
         self.profile = profile # "car", "bike", "foot" "taxi", "public-transport"...
         self.distance = distance # m
+        self.depart_time = depart_time
         self.duration = duration # s
         self.price = price # €
         #TODO define more properties to the route summary: "leisure"/agreability, "co2"....
@@ -28,14 +30,19 @@ class RouteSummary():
         # TODO: add some "legs" information to be able to display some kind of basic info about the trip?
         self.legs = legs
         self.nbChanges = nbChanges
+        self.origin_id = origin_id
+        self.destination_id = destination_id
 
 class PRRouteSummary():
-    def __init__(self, duration, price, parking, pt_journey):
-        # TODO: distance is not important?
+    def __init__(self, duration, price, car_distance, parking, pt_journey, depart_time=None, url_car=None, url_pt=None):
+        self.depart_time = depart_time
         self.duration = duration # s
         self.price = price # €
-        self.parking = parking # ID accoding to ??? which API?
+        self.car_distance = car_distance
+        self.parking = parking # a Parking
         self.pt_journey = pt_journey # bus line, bus stop start, bus stop end, time, => 9292 legs
+        self.url_car = url_car
+        self.url_pt = url_pt
     
     def __str__(self):
         return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt_journey)
@@ -80,12 +87,18 @@ def pr_route(origin, destination, depart_time):
             logging.exception("Failed to get routing for A %s to %s", origin, p)
             continue
             
-        depart_time_p = depart_time + a_to_p.duration
+        depart_time_p = depart_time + a_to_p.duration + PARKING_TO_PT_TIME
         p_to_b = nl9292_route(p.coordinates, destination, depart_time_p)
         
-        total_dur = a_to_p.duration + p_to_b.duration
-        total_price = a_to_p.price + p.price + p_to_b.price 
-        j = PRRouteSummary(total_dur, total_price, p, p_to_b.legs)
+        total_dur = a_to_p.duration + PARKING_TO_PT_TIME + p_to_b.duration
+        total_price = a_to_p.price + p.price + p_to_b.price
+        # When to leave at the latest (computed backwards based on the public transport)
+        depart_time = p_to_b.depart_time - PARKING_TO_PT_TIME - a_to_p.duration
+        gmap_url_a_p = create_gmap_url(origin, p.coordinates, "car")
+        logging.debug("Car journey: %s", gmap_url_a_p)
+        nl9292_url_p_b = create_nl9292_url(p_to_b.origin_id, p_to_b.destination_id)
+        logging.debug("Public transport journey: %s", nl9292_url_p_b)
+        j = PRRouteSummary(total_dur, total_price, a_to_p.distance, p, p_to_b.legs, depart_time, gmap_url_a_p, nl9292_url_p_b)
         full_journeys.append(j)
 
     logging.debug("Got %d journeys", len(full_journeys))
@@ -98,9 +111,34 @@ def pr_route(origin, destination, depart_time):
     quickest_journeys = sorted(full_journeys, key=lambda j: j.duration)
     best_journeys |= set(quickest_journeys[:2])
 
-    logging.debug("Select %d journeys", len(best_journeys))
+    logging.debug("Selected %d journeys", len(best_journeys))
 
     return best_journeys
+
+
+def create_gmap_url(origin, destination, profile="car"):
+    """
+    origin (float, float): coordinates longitude, latitude, eg: (-122.7282, 45.5801)
+    destination (float, float): coordinates
+    return (str): the url to open the routing in google map
+    """
+    # cf https://developers.google.com/maps/documentation/urls/ios-urlscheme
+    gmprofile = {"car": "driving", "pt": "transit", "bike": "bicycling", "foot": "walking"}[profile]
+    return ("https://www.google.com/maps/?" + 
+            "saddr=@%f,%f" % (origin[1], origin[0]) +
+            "&daddr=@%f,%f" % (destination[1], destination[0]) +
+            "&directionsmode=%s" % gmprofile)
+
+def create_nl9292_url(origin_id, destination_id):
+    """
+    origin_id (str): nl9292 POI ID
+    destination_id (str): nl9292 POI ID
+    return (str): the url to open the routing in 9292
+    """
+    # cf https://9292.nl/zakelijk/reisadvies-via-je-eigen-website
+    return ("https://9292.nl/?" + 
+            "van=%s" % origin_id +
+            "&naar=%s" % destination_id)
 
 
 MONOTCH_URI_BASE = "https://api.monotch.com/PrettigParkeren/v6/"
@@ -171,8 +209,8 @@ def get_bbox(position, radius):
     """
     return (4 float): long west, lat north, long east, lat south
     """
-    nw = VincentyDistance(meters=radius/2).destination(Point(position[1], position[0]), 225)
-    se = VincentyDistance(meters=radius/2).destination(Point(position[1], position[0]), 45)
+    nw = geodistance(meters=radius/2).destination(Point(position[1], position[0]), 225)
+    se = geodistance(meters=radius/2).destination(Point(position[1], position[0]), 45)
     return nw[1], nw[0], se[1], se[0]
 
 
@@ -242,7 +280,8 @@ def nl9292_route(origin, destination, depart_time):
     price = j["fareInfo"]["fullPriceCents"] * 0.01 # €
     legs = j["legs"]
     nbChanges = j["numberOfChanges"]
-    return RouteSummary("public-transport", None, duration, price, legs, nbChanges)
+    logging.debug("Found pt journey starting at %f, lasting %d m", departure, duration / 60)
+    return RouteSummary("public-transport", None, duration, price, legs, departure, nbChanges, origin_id, destination_id)
 
 def nl9292_time_to_epoch(t):
     """
