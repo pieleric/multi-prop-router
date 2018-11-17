@@ -65,7 +65,7 @@ class TestPRRoute(unittest.TestCase):
         #journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
-            print(j.to_json())
+            print(j.to_struct())
             print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
                   (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
         self.assertGreaterEqual(len(journeys), 2)

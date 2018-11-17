@@ -39,6 +39,14 @@ class RouteSummary():
         self.origin_id = origin_id
         self.destination_id = destination_id
         self.url = None
+        
+    def to_struct(self):
+        struct = {"duration": self.duration,
+                  "price": self.price,
+                 }
+        if self.url:
+            struct["url"]= self.url
+        return struct
 
 class PRRouteSummary():
     def __init__(self, duration, price, car, parking, pt):
@@ -47,10 +55,10 @@ class PRRouteSummary():
         self.car = car # s
         self.pt = pt
         self.parking = parking # a Parking
-    
+
     def __str__(self):
         return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt.legs)
-    
+
     def to_struct(self):
         struct = {"duration_car": self.car.duration,
                   "price_car": self.car.price + self.parking.price,
@@ -384,7 +392,15 @@ def nl9292_route(origin, destination, depart_time):
     departure = nl9292_time_to_epoch(j["departure"])
     arrival = nl9292_time_to_epoch(j["arrival"])
     duration = arrival - departure
-    price = j["fareInfo"]["fullPriceCents"] * 0.01 # €
+    try:
+        if j["fareInfo"]["fullPriceCents"] is None:
+            # Can happen if only walking
+            price = 0
+        else:
+            price = j["fareInfo"]["fullPriceCents"] * 0.01 # €
+    except Exception:
+        logging.exception("Failed to compute price")
+        price = 0
     legs = j["legs"]
     nbChanges = j["numberOfChanges"]
     logging.debug("Found pt journey starting at %f, lasting %d m", departure, duration / 60)
