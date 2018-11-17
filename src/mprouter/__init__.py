@@ -1,5 +1,5 @@
 import mapbox
-from mapbox import Directions
+from mapbox import Directions, Geocoder
 import json
 import requests
 import time
@@ -252,6 +252,20 @@ def mapbox_route(origin, destination, profile):
     # driving_routes = response.geojson()
 
     return RouteSummary(profile, route["distance"], route["duration"])
+
+def mapbox_geocoder_fw(address):
+    """
+    address (str): 
+    return (float, float): longitude, latitude
+    """
+    geocoder = Geocoder()
+    # TODO: add some proximity (from the user)?
+    response = geocoder.forward(address)
+    
+    r = response.json()
+    coord = r["features"][0]['center']
+    return float(coord[0]), float(coord[1])
+
 
 # cf https://github.com/aitorvs/9292-api-spec/blob/master/docs/resources/journeys.md
 NL_9292_URI_BASE = "http://api.9292.nl/0.1/"

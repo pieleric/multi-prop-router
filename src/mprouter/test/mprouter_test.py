@@ -8,7 +8,8 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 longlat_tudelft = (4.37212, 52.00234)
 longlat_kijkduin = (4.22200, 52.06965)
-longlat_denhaag = (4.31527, 52.08040) # Mauritzhuis
+longlat_denhaag = (4.31527, 52.08040) # Mauritshuis
+add_denhaag = "Mauritshuis, Den Haag"
 
 
 class TestMapBox(unittest.TestCase):
@@ -20,6 +21,11 @@ class TestMapBox(unittest.TestCase):
         assert sumcar.duration < sumbike.duration < sumfoot.duration
         # In NL, on foot can be further than by bike
         assert sumcar.distance >= sumbike.distance #>= sumfoot.distance
+        
+    def test_geocoder_fw(self):
+        dh = mprouter.mapbox_geocoder_fw(add_denhaag)
+        self.assertAlmostEqual(dh[0], longlat_denhaag[0], delta=0.01)
+        self.assertAlmostEqual(dh[1], longlat_denhaag[1], delta=0.01)
 
 
 class Test9292(unittest.TestCase):
