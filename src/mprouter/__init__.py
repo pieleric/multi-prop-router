@@ -34,11 +34,15 @@ class RouteSummary():
         self.destination_id = destination_id
 
 class PRRouteSummary():
-    def __init__(self, duration, price, car_distance, parking, pt_journey, depart_time=None, url_car=None, url_pt=None):
+    def __init__(self, duration, price, distance_car, parking, pt_journey, depart_time=None, duration_car=None, duration_pt=None, price_pt=None, url_car=None, url_pt=None):
         self.depart_time = depart_time
         self.duration = duration # s
+        self.duration_car = duration_car # s
+        self.duration_pt = duration_pt
         self.price = price # €
-        self.car_distance = car_distance
+        # TODO price of the car by converting km -> gas -> €?
+        self.price_pt = price_pt
+        self.distance_car = distance_car
         self.parking = parking # a Parking
         self.pt_journey = pt_journey # bus line, bus stop start, bus stop end, time, => 9292 legs
         self.url_car = url_car
@@ -98,7 +102,8 @@ def pr_route(origin, destination, depart_time):
         logging.debug("Car journey: %s", gmap_url_a_p)
         nl9292_url_p_b = create_nl9292_url(p_to_b.origin_id, p_to_b.destination_id)
         logging.debug("Public transport journey: %s", nl9292_url_p_b)
-        j = PRRouteSummary(total_dur, total_price, a_to_p.distance, p, p_to_b.legs, depart_time, gmap_url_a_p, nl9292_url_p_b)
+        j = PRRouteSummary(total_dur, total_price, a_to_p.distance, p, p_to_b.legs, depart_time, url_car=gmap_url_a_p, url_pt=nl9292_url_p_b,
+                           duration_car=a_to_p.duration, duration_pt=p_to_b.duration, price_pt=p_to_b.price)
         full_journeys.append(j)
 
     logging.debug("Got %d journeys", len(full_journeys))
@@ -272,6 +277,7 @@ def nl9292_route(origin, destination, depart_time):
     r = response.json()
     logging.debug("Got response %s", r)
     # We pick the first journey we find
+    # TODO: be more picky: less changes + earliest one after the departure time
     j = r["journeys"][0]
 
     departure = nl9292_time_to_epoch(j["departure"])

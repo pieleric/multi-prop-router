@@ -49,8 +49,8 @@ class TestMonotch(unittest.TestCase):
 class TestPRRoute(unittest.TestCase):
     def test_pr_route(self):
         departt = 1542387791 # 2018-11-16 @ 16:30
-        #journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, departt)
-        journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
+        journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, departt)
+        #journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
             print(j)
@@ -58,8 +58,9 @@ class TestPRRoute(unittest.TestCase):
                   (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
         self.assertGreaterEqual(len(journeys), 2)
         for j in journeys:
-            self.assertGreater(j.depart_time, departt)
-        
+            self.assertGreaterEqual(j.duration, j.duration_car + j.duration_pt)
+            self.assertGreater(j.depart_time, departt - 600)
+
     def test_bbox(self):
         bbox = mprouter.get_bbox(longlat_tudelft, 10000)
         self.assertEqual(len(bbox), 4)
