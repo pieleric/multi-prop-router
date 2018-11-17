@@ -1,0 +1,23 @@
+https://developers.google.com/maps/documentation/urls/ios-urlscheme
+
+comgooglemaps://?saddr=Google+Inc,+8th+Avenue,+New+York,+NY&daddr=John+F.+Kennedy+International+Airport,+Van+Wyck+Expressway,+Jamaica,+New+York&directionsmode=transit
+
+https://www.google.com/maps/?saddr=@lat,lng&daddr=@lat,lng&directionsmode=driving
+https://www.google.com/maps/?saddr=@52.00234,4.37212&daddr=@52.081784,4.264028&directionsmode=driving
+
+
+    saddr: Sets the starting point for directions searches. This can be a latitude,longitude or a query formatted address. If it is a query string that returns more than one result, the first result will be selected. If the value is left blank, then the user’s current location will be used.
+    daddr: Sets the end point for directions searches. Has the same format and behavior as saddr.
+    directionsmode: Method of transportation. Can be set to: driving, transit, bicycling or walking.
+
+
+
+= openstreetmap =
+https://www.openstreetmap.org/directions?engine=osrm_car&route=52.0026,4.3657;52.0658,4.2929
+
+
+= 9292 =
+https://9292.nl/zakelijk/reisadvies-via-je-eigen-website
+https://9292.nl/?van=utrecht_catharijnesingel-39&naar=utrecht_catharijnesingel-39
+
+https://9292.nl/?van=utrecht_catharijnesingel-39&naar=den-haag/p-r-de-uithof

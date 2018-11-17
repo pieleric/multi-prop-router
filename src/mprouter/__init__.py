@@ -18,7 +18,7 @@ try:
 except Exception:
         MONOTCH_CACHE_PARKING_DETAILS = {}
 
-MAX_PARKING_DISTANCE = 10000
+MAX_PARKING_DISTANCE = 5000
 PARKING_TO_PT_TIME = 3 * 60 # s
 
 # Note: we express all coordinates in longitude (float), latitude (float), as in GeoJSON
@@ -65,6 +65,26 @@ class Parking():
         return "Parking %s (%s) at %s, price = %f €" % (self.name, self.id, self.coordinates, self.price) 
 
 
+
+def get_bbox(position, radius):
+    """
+    return (4 float): long west, lat north, long east, lat south
+    """
+    nw = geodistance(meters=radius).destination(Point(position[1], position[0]), 225)
+    se = geodistance(meters=radius).destination(Point(position[1], position[0]), 45)
+    return nw[1], nw[0], se[1], se[0]
+
+
+
+def get_distance(a, b):
+    """
+    origin (float, float): coordinates longitude, latitude, eg: (-122.7282, 45.5801)
+    destination (float, float): coordinates
+    return (float): in m
+    """
+    return geodistance(Point(a[1], a[0]), Point(b[1], b[0])).meters
+
+
 # TODO: also take the end time? At least to check that the parking is opened when coming back,
 # that there is still public transport, and to compute the price
 def pr_route(origin, destination, depart_time):
@@ -77,7 +97,8 @@ def pr_route(origin, destination, depart_time):
 
     # Find all the parking "near" the destinations (aka around the city)
     try:
-        pks_dest = monotch_list_parkings(destination, MAX_PARKING_DISTANCE)
+        # FIXME: once the API is enabled again -> remove the "cache_" 
+        pks_dest = cache_monotch_list_parkings(destination, MAX_PARKING_DISTANCE)
     except Exception:
         logging.exception("Failed to get parkings for location %s", destination)
         raise
@@ -164,6 +185,50 @@ def create_nl9292_url(origin_id, destination_id):
             "van=%s" % origin_id +
             "&naar=%s" % destination_id)
 
+def cache_monotch_list_parkings(position, radius):
+    """
+    origin (float, float): coordinates longitude, latitude, eg: (-122.7282, 45.5801)
+    radius (float): max distance from the position
+    return (list of Parkings)
+    """
+    f = open("monotch_parkings.json")
+    r = json.load(f)
+
+    pks = []
+    for pj in r:
+        pid = pj["id"]
+        
+        loc = float(pj["location"]["lng"]), float(pj["location"]["lat"])
+        if get_distance(position, loc) > radius:
+            logging.debug("Skipping parking %s which is too far", pid)
+        
+        if pid in MONOTCH_CACHE_PARKING_DETAILS:
+            p_details = monotch_get_parking_details(pid)
+        else:
+            logging.debug("Simulating non cached parking %s", pid)
+            p_details = {"overview_city": "Den Haag",
+                         "rate_day": "1000",
+                         "name": ""}
+
+        if "rate_day" in pj:
+            try:
+                price = (int(pj["rate_day"]) / 100) 
+                price /= 2 # asssume we can get discount for 12h
+            except Exception:
+                logging.exception("Failed to read rate day for parking %s", pid)
+                price = 5
+        # TODO: for a specific time slot? cf p_details["rates"]
+        
+        else:
+            price = 0
+        
+        # Note: the address is not always present. Ideally, we'd just fill-up by reverse geocoding.
+        full_address = p_details.get("address", "") + " " + p_details["overview_city"]
+        p = Parking(loc, p_details.get("name", ""), pj["id"], price, full_address)
+        pks.append(p)
+
+    return pks
+
 
 MONOTCH_URI_BASE = "https://api.monotch.com/PrettigParkeren/v6/"
 MONOTCH_USABLE_PARKINGS = "parking_unknown;parking_garage;parking_area;parking_pr;parking_valet;parking_book"
@@ -231,15 +296,6 @@ def monotch_get_parking_details(parking_id):
     r = response.json()
     return r
     
-
-def get_bbox(position, radius):
-    """
-    return (4 float): long west, lat north, long east, lat south
-    """
-    nw = geodistance(meters=radius/2).destination(Point(position[1], position[0]), 225)
-    se = geodistance(meters=radius/2).destination(Point(position[1], position[0]), 45)
-    return nw[1], nw[0], se[1], se[0]
-
 
 # TODO: add support for the time of departue/arrival?
 

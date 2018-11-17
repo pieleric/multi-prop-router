@@ -8,8 +8,8 @@ from mprouter import MONOTCH_URI_BASE, MONOTCH_USABLE_PARKINGS, MONOTCH_KEY
 
 logging.getLogger().setLevel(logging.DEBUG)
 
-BBOX = 4.3193, 52.1527,4.4529, 51.9396
-#BBOX = mprouter.get_bbox((4.37212, 52.00234), 1000)
+#BBOX = 4.3193, 52.1527,4.4529, 51.9396
+BBOX = mprouter.get_bbox((4.37212, 52.00234), 30000)
 
 uri = (MONOTCH_URI_BASE + "list?" + "w=%f&n=%f&e=%f&s=%f" % BBOX +
        "&types=" + MONOTCH_USABLE_PARKINGS +
@@ -24,9 +24,11 @@ while response.status_code == 403:
 logging.debug("Got response: %s", response.content)
 r = response.json()
 
-pks = {}
+pks = dict(mprouter.MONOTCH_CACHE_PARKING_DETAILS)
 for pj in r:
     pid = pj["id"]
+    if pid in pks:
+        continue
     try:
         p_details = mprouter.monotch_get_parking_details(pid)
     except Exception:
