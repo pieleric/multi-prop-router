@@ -190,8 +190,14 @@ def pr_route_address(origin_add, destination_add, depart_time):
     origin = mapbox_geocoder_fw(origin_add)
     destination = mapbox_geocoder_fw(destination_add)
     j_car = mapbox_route(origin, destination, "car")
-    # TODO: instead of just by car, we should also include the parking fee => find the closest parking and add it to the price (+time)
-    
+    try:
+        pk_closest = cache_monotch_list_parkings(destination, None)[0]
+    except Exception:
+        logging.exception("Failed to get parkings for location %s", destination)
+        raise
+    j_car.price += pk_closest.price
+    j_car.duration += PARKING_TO_PT_TIME
+
     js_pr =  pr_route(origin, destination, depart_time)
     return j_car, js_pr
 
@@ -220,10 +226,10 @@ def create_nl9292_url(origin_id, destination_id):
             "van=%s" % origin_id +
             "&naar=%s" % destination_id)
 
-def cache_monotch_list_parkings(position, radius):
+def cache_monotch_list_parkings(position, radius=None):
     """
     origin (float, float): coordinates longitude, latitude, eg: (-122.7282, 45.5801)
-    radius (float): max distance from the position
+    radius (float or None): max distance from the position, if None, just return the closest parking
     return (list of Parkings)
     """
     f = open("monotch_parkings.json")
@@ -234,7 +240,7 @@ def cache_monotch_list_parkings(position, radius):
         pid = pj["id"]
         
         loc = float(pj["location"]["lng"]), float(pj["location"]["lat"])
-        if get_distance(position, loc) > radius:
+        if radius is not None and get_distance(position, loc) > radius:
             logging.debug("Skipping parking %s which is too far", pid)
             continue
         
@@ -262,6 +268,11 @@ def cache_monotch_list_parkings(position, radius):
         full_address = p_details.get("address", "") + " " + p_details["overview_city"]
         p = Parking(loc, p_details.get("name", ""), pj["id"], price, full_address)
         pks.append(p)
+
+    if radius is None:
+        # pick the closest one
+        pk = min(pks, key=lambda p: get_distance(position, p.coordinates))
+        return [pk]
 
     return pks
 

@@ -59,6 +59,14 @@ class TestMonotch(unittest.TestCase):
             print(p)
         self.assertGreaterEqual(len(pks10km), len(pks1km))
 
+    def test_closest_parking(self):
+        pk_kijkduin = mprouter.cache_monotch_list_parkings(longlat_kijkduin)[0]
+        print(pk_kijkduin)
+        pk_denhaag = mprouter.cache_monotch_list_parkings(longlat_denhaag)[0]
+        dist = mprouter.get_distance(pk_denhaag.coordinates, longlat_denhaag)
+        print(pk_denhaag)
+        self.assertLessEqual(dist, 1000)
+
 
 class TestPRRoute(unittest.TestCase):
     def test_pr_route(self):
@@ -92,7 +100,7 @@ class TestPRRoute(unittest.TestCase):
     def test_pr_route_add(self):
         departt = 1542387791 # 2018-11-16 @ 16:30
         car_only, journeys = mprouter.pr_route_address(add_tudelft, add_kijkduin, departt)
-        logging.debug("Just by car: %f km, %f min", car_only.distance/1000, car_only.duration / 60)
+        logging.debug("Just by car: %s", car_only.to_struct())
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
             print(j.to_struct())
