@@ -18,7 +18,7 @@ PARKING_TO_PT_TIME = 3 * 60 # s
 # Note: we express all coordinates in longitude (float), latitude (float), as in GeoJSON
 
 class RouteSummary():
-    def __init__(self, profile, distance, duration, price=0, legs=None, depart_time=None, nbChanges=0, origin_id=None, destination_id=None):
+    def __init__(self, profile, distance, duration, price=0, legs=None, depart_time=None, nbChanges=0, origin_id=None, destination_id=None, url=None):
         # TODO: distance is not important?
         self.profile = profile # "car", "bike", "foot" "taxi", "public-transport"...
         self.distance = distance # m
@@ -32,24 +32,18 @@ class RouteSummary():
         self.nbChanges = nbChanges
         self.origin_id = origin_id
         self.destination_id = destination_id
+        self.url = None
 
 class PRRouteSummary():
-    def __init__(self, duration, price, distance_car, parking, pt_journey, depart_time=None, duration_car=None, duration_pt=None, price_pt=None, url_car=None, url_pt=None):
-        self.depart_time = depart_time
+    def __init__(self, duration, price, car, parking, pt):
         self.duration = duration # s
-        self.duration_car = duration_car # s
-        self.duration_pt = duration_pt
         self.price = price # €
-        # TODO price of the car by converting km -> gas -> €?
-        self.price_pt = price_pt
-        self.distance_car = distance_car
+        self.car = car # s
+        self.pt = pt
         self.parking = parking # a Parking
-        self.pt_journey = pt_journey # bus line, bus stop start, bus stop end, time, => 9292 legs
-        self.url_car = url_car
-        self.url_pt = url_pt
     
     def __str__(self):
-        return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt_journey)
+        return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt.legs)
 
 # TODO: for now, we assume the price is fixed (because we can always get some arrangment with every parking company ;-) )
 # ideally, it could also be per hour
@@ -86,24 +80,30 @@ def pr_route(origin, destination, depart_time):
     full_journeys = []
     for p in pks_dest:
         try:
+            # TODO; find the closest parking from the destination (and if it's not too far, use it to report the price with only car)
+            # TODO: remove parkings which are really too close? Or just special case on foot?
             a_to_p = mapbox_route(origin, p.coordinates, "car") # TODO: pass the depart_time?
+            a_to_p.url = create_gmap_url(origin, p.coordinates, "car")
         except Exception:
             logging.exception("Failed to get routing for A %s to %s", origin, p)
             continue
             
         depart_time_p = depart_time + a_to_p.duration + PARKING_TO_PT_TIME
-        p_to_b = nl9292_route(p.coordinates, destination, depart_time_p)
+        try:
+            p_to_b = nl9292_route(p.coordinates, destination, depart_time_p)
+            p_to_b.url = create_nl9292_url(p_to_b.origin_id, p_to_b.destination_id)
+        except Exception:
+            # Can happen if it's too close
+            logging.exception("Failed to get routing for P %s to %s", p, destination)
+            continue
         
         total_dur = a_to_p.duration + PARKING_TO_PT_TIME + p_to_b.duration
         total_price = a_to_p.price + p.price + p_to_b.price
         # When to leave at the latest (computed backwards based on the public transport)
-        depart_time = p_to_b.depart_time - PARKING_TO_PT_TIME - a_to_p.duration
-        gmap_url_a_p = create_gmap_url(origin, p.coordinates, "car")
-        logging.debug("Car journey: %s", gmap_url_a_p)
-        nl9292_url_p_b = create_nl9292_url(p_to_b.origin_id, p_to_b.destination_id)
-        logging.debug("Public transport journey: %s", nl9292_url_p_b)
-        j = PRRouteSummary(total_dur, total_price, a_to_p.distance, p, p_to_b.legs, depart_time, url_car=gmap_url_a_p, url_pt=nl9292_url_p_b,
-                           duration_car=a_to_p.duration, duration_pt=p_to_b.duration, price_pt=p_to_b.price)
+        a_to_p.depart_time = p_to_b.depart_time - PARKING_TO_PT_TIME - a_to_p.duration
+        logging.debug("Car journey: %s", a_to_p.url)
+        logging.debug("Public transport journey: %s", p_to_b.url)
+        j = PRRouteSummary(total_dur, total_price, a_to_p, p, p_to_b)
         full_journeys.append(j)
 
     logging.debug("Got %d journeys", len(full_journeys))
@@ -119,6 +119,19 @@ def pr_route(origin, destination, depart_time):
     logging.debug("Selected %d journeys", len(best_journeys))
 
     return best_journeys
+
+
+def pr_route_address(origin_add, destination_add, depart_time):
+    """
+    almost same as pr_route, but takes addresses, instead of coordinates, as input
+    Also runs the car only route
+    return RouteSummary, list of PRRouteSummary: car only, best P+R routes
+    """
+    origin = mapbox_geocoder_fw(origin_add)
+    destination = mapbox_geocoder_fw(destination_add)
+    j_car = mapbox_route(origin, destination, "car")
+    js_pr =  pr_route(origin, destination, depart_time)
+    return j_car, js_pr
 
 
 def create_gmap_url(origin, destination, profile="car"):
@@ -189,7 +202,6 @@ def monotch_list_parkings(position, radius):
     return pks
 
 
-
 def monotch_get_parking_details(parking_id):
     """
     return (str): structure json-like from the monotoch API
@@ -233,13 +245,6 @@ def mapbox_route(origin, destination, profile):
     mbprofile = {"car": "mapbox/driving-traffic", "bike": "mapbox/cycling", "foot": "mapbox/walking"}[profile]
 
     service = Directions()
-    # Note: the start/end points can also be encoded in GeoJSON, but that doesn't seem necessary:
-#    o = {'type': 'Feature',
-#         'properties': {'name': 'Boooo'},
-#         'geometry': {
-#             'type': 'Point',
-#             'coordinates': origin}}
-
     response = service.directions([origin, destination], mbprofile)
     # TODO: check it went fine
 
@@ -251,6 +256,7 @@ def mapbox_route(origin, destination, profile):
     # To get the whole geometry:
     # driving_routes = response.geojson()
 
+    # TODO price of the car by converting km -> gas -> €?
     return RouteSummary(profile, route["distance"], route["duration"])
 
 def mapbox_geocoder_fw(address):
@@ -263,6 +269,8 @@ def mapbox_geocoder_fw(address):
     response = geocoder.forward(address)
     
     r = response.json()
+    logging.debug("Rettrieved potential locations for %s: %s", address, r)
+    
     coord = r["features"][0]['center']
     return float(coord[0]), float(coord[1])
 

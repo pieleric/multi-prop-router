@@ -7,7 +7,9 @@ import mprouter
 logging.getLogger().setLevel(logging.DEBUG)
 
 longlat_tudelft = (4.37212, 52.00234)
+add_tudelft = "TU aula, delft"
 longlat_kijkduin = (4.22200, 52.06965)
+add_kijkduin = "deltaplein, den haag"
 longlat_denhaag = (4.31527, 52.08040) # Mauritshuis
 add_denhaag = "Mauritshuis, Den Haag"
 
@@ -26,6 +28,10 @@ class TestMapBox(unittest.TestCase):
         dh = mprouter.mapbox_geocoder_fw(add_denhaag)
         self.assertAlmostEqual(dh[0], longlat_denhaag[0], delta=0.01)
         self.assertAlmostEqual(dh[1], longlat_denhaag[1], delta=0.01)
+        
+        dh = mprouter.mapbox_geocoder_fw(add_kijkduin)
+        self.assertAlmostEqual(dh[0], longlat_kijkduin[0], delta=0.01)
+        self.assertAlmostEqual(dh[1], longlat_kijkduin[1], delta=0.01)
 
 
 class Test9292(unittest.TestCase):
@@ -64,8 +70,22 @@ class TestPRRoute(unittest.TestCase):
                   (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
         self.assertGreaterEqual(len(journeys), 2)
         for j in journeys:
-            self.assertGreaterEqual(j.duration, j.duration_car + j.duration_pt)
-            self.assertGreater(j.depart_time, departt - 600)
+            self.assertGreaterEqual(j.duration, j.car.duration + j.pt.duration)
+            self.assertGreater(j.car.depart_time, departt - 600)
+
+    def test_pr_route_add(self):
+        departt = 1542387791 # 2018-11-16 @ 16:30
+        car_only, journeys = mprouter.pr_route_address(add_tudelft, add_kijkduin, departt)
+        logging.debug("Just by car: %f km, %f min", car_only.distance/1000, car_only.duration / 60)
+        logging.debug("Got journeys: %s", journeys)
+        for j in journeys:
+            print(j)
+            print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
+                  (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
+        self.assertGreaterEqual(len(journeys), 2)
+        for j in journeys:
+            self.assertGreaterEqual(j.duration, j.car.duration + j.pt.duration)
+            self.assertGreater(j.car.depart_time, departt - 600)
 
     def test_bbox(self):
         bbox = mprouter.get_bbox(longlat_tudelft, 10000)
