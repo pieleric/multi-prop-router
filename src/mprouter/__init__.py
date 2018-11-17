@@ -67,6 +67,13 @@ class PRRouteSummary():
         self.car = car # s
         self.pt = pt
         self.parking = parking # a Parking
+        self.co2_savings = None
+        self.price_savings = None
+        self.duration_savings = None
+    
+    @property
+    def co2(self):
+        return self.car.co2 + self.pt.co2
 
     def __str__(self):
         return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt.legs)
@@ -78,8 +85,12 @@ class PRRouteSummary():
                   "duration_pt": self.pt.duration,
                   "price_pt": self.pt.price,
                   "url_pt": self.pt.url,
-                  "co2": self.car.co2 + self.pt.co2
+                  "co2": self.co2
                  }
+        for attr in ("co2_savings", "price_savings", "duration_savings"):
+            av = getattr(self, attr)
+            if av is not None:
+                struct[attr] = av
         return struct
 
 # TODO: for now, we assume the price is fixed (because we can always get some arrangment with every parking company ;-) )
@@ -199,6 +210,12 @@ def pr_route_address(origin_add, destination_add, depart_time):
     j_car.duration += PARKING_TO_PT_TIME
 
     js_pr =  pr_route(origin, destination, depart_time)
+    # Compute savings
+    for j in js_pr:
+        j.co2_savings = j_car.co2 - j.co2
+        j.price_savings = j_car.price - j.price
+        j.duration_savings = j_car.duration - j.duration
+
     return j_car, js_pr
 
 
