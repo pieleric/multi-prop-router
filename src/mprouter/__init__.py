@@ -51,7 +51,7 @@ class PRRouteSummary():
     def __str__(self):
         return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt.legs)
     
-    def to_json(self):
+    def to_struct(self):
         struct = {"duration_car": self.car.duration,
                   "price_car": self.car.price + self.parking.price,
                   "url_car": self.car.url,
@@ -59,7 +59,7 @@ class PRRouteSummary():
                   "price_pt": self.pt.price,
                   "url_pt": self.pt.url,
                  }
-        return json.dumps(struct)
+        return struct
 
 # TODO: for now, we assume the price is fixed (because we can always get some arrangment with every parking company ;-) )
 # ideally, it could also be per hour
