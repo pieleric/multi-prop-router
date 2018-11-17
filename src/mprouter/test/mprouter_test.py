@@ -65,6 +65,20 @@ class TestPRRoute(unittest.TestCase):
         #journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
         logging.debug("Got journeys: %s", journeys)
         for j in journeys:
+            print(j.to_json())
+            print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
+                  (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))
+        self.assertGreaterEqual(len(journeys), 2)
+        for j in journeys:
+            self.assertGreaterEqual(j.duration, j.car.duration + j.pt.duration)
+            self.assertGreater(j.car.depart_time, departt - 600)
+
+    def test_pr_route_night(self):
+        departt = 1542420000 # 2018-11-17 @ 03:00
+        journeys = mprouter.pr_route(longlat_tudelft, longlat_kijkduin, departt)
+        #journeys = mprouter.pr_route(longlat_tudelft, longlat_denhaag, departt)
+        logging.debug("Got journeys: %s", journeys)
+        for j in journeys:
             print(j)
             print("https://www.openstreetmap.org/directions?engine=osrm_car&route=%f,%f;%f,%f" % 
                   (longlat_tudelft[1], longlat_tudelft[0], j.parking.coordinates[1], j.parking.coordinates[0]))

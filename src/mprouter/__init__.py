@@ -18,7 +18,7 @@ try:
 except Exception:
         MONOTCH_CACHE_PARKING_DETAILS = {}
 
-MAX_PARKING_DISTANCE = 5000
+MAX_PARKING_DISTANCE = 4000 # m
 PARKING_TO_PT_TIME = 3 * 60 # s
 
 # Note: we express all coordinates in longitude (float), latitude (float), as in GeoJSON
@@ -50,6 +50,16 @@ class PRRouteSummary():
     
     def __str__(self):
         return "PR Journey of %d m @ %f €, parking at %s, then doing: %s" % (self.duration / 60, self.price, self.parking.name, self.pt.legs)
+    
+    def to_json(self):
+        struct = {"duration_car": self.car.duration,
+                  "price_car": self.car.price + self.parking.price,
+                  "url_car": self.car.url,
+                  "duration_pt": self.pt.duration,
+                  "price_pt": self.pt.price,
+                  "url_pt": self.pt.url,
+                 }
+        return json.dumps(struct)
 
 # TODO: for now, we assume the price is fixed (because we can always get some arrangment with every parking company ;-) )
 # ideally, it could also be per hour
