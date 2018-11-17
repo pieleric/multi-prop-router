@@ -12,6 +12,12 @@ from geopy.distance import distance as geodistance
 MONOTCH_KEY = open("monotch.key").readline().strip()
 os.environ["MAPBOX_ACCESS_TOKEN"] = open("mapbox.key").readline().strip()
 
+try:
+    with open("monotch_parking_details.json") as f:
+        MONOTCH_CACHE_PARKING_DETAILS = json.load(f)
+except Exception:
+        MONOTCH_CACHE_PARKING_DETAILS = {}
+
 MAX_PARKING_DISTANCE = 10000
 PARKING_TO_PT_TIME = 3 * 60 # s
 
@@ -206,6 +212,10 @@ def monotch_get_parking_details(parking_id):
     """
     return (str): structure json-like from the monotoch API
     """
+    # Cache, because monotch limits the number of requests per sec (and anyway, it's static data)
+    if parking_id in MONOTCH_CACHE_PARKING_DETAILS:
+        return MONOTCH_CACHE_PARKING_DETAILS[parking_id]
+
     # https://api.monotch.com/PrettigParkeren/v6/detail?id=parking_1557&includeRates=1&api_key=hp8cq2h6sy2me5hn4nekgnme
     # https://api.monotch.com/PrettigParkeren/v6/rates?eid=parking_1731&api_key=hp8cq2h6sy2me5hn4nekgnme
     uri = (MONOTCH_URI_BASE + "detail?" + "id=%s" % parking_id +

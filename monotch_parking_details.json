@@ -1,0 +1,4711 @@
+{
+    "parking_1444": {
+        "address": "Rotterdam Airportplein",
+        "city_id": "city_2",
+        "id": "parking_1444",
+        "location": {
+            "lat": "51.948649757353806",
+            "lng": "4.433216998328411"
+        },
+        "name": "Rotterdam Airport P2 (Business Parkeren)",
+        "overview_city": "Rotterdam",
+        "rate_day": "4000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "30 min  \u20ac 2,50\n1 uur     \u20ac 4,00\n1,5 uur  \u20ac 6,00\n2 uur     \u20ac 8,00\n3 uur     \u20ac 11,00\n4 uur     \u20ac 14,00,\nElk volgend uur + \u20ac 3,00\n\u20ac 40,00 per iedere 24 uur !",
+        "type": "parking_area"
+    },
+    "parking_1445": {
+        "address": "Rotterdam Airportplein 50",
+        "city_id": "city_2",
+        "id": "parking_1445",
+        "location": {
+            "lat": "51.94742965969066",
+            "lng": "4.435030171622429"
+        },
+        "name": "Rotterdam Airport P6  (Comfort Parkeren)",
+        "overview_city": "Rotterdam",
+        "rate_day": "3500",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "30 minuten \u20ac 2,50, 1 uur \u20ac 4,00, 1\u00bd uur \u20ac 6,00,\ndaarna \u20ac 2,00 per uur.\nNa 10 uur dagtarief \u20ac 35,00.\n2 dagen \u20ac 65,00, 3 dagen \u20ac 72,50.\nNa 3 dagen \u20ac 7,50  per iedere 24 uur erbij.",
+        "type": "parking_area"
+    },
+    "parking_1446": {
+        "address": "Rotterdam Airportbaan 20",
+        "city_id": "city_2",
+        "id": "parking_1446",
+        "location": {
+            "lat": "51.94935071985988",
+            "lng": "4.429912516822014"
+        },
+        "name": "Rotterdam Airport P1 Parkeren en vliegen",
+        "overview_city": "Rotterdam",
+        "rate_day": "3000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "30 min. \u20ac 2,50\n1 uur   \u20ac 4,00\n1,5 uur  \u20ac 6,00\n2 uur   \u20ac 8,00\n3 uur   \u20ac 9,50\n4 uur   \u20ac 11,00, daarna elk uur \u20ac 1,50 erbij\nNa 10 uur : 1 dag \u20ac 30,00, daarna \u20ac 5,00 per iedere 24 uur erbij.",
+        "type": "parking_area"
+    },
+    "parking_1447": {
+        "address": "Rotterdam Airportplein",
+        "city_id": "city_2",
+        "id": "parking_1447",
+        "location": {
+            "lat": "51.94695020843513",
+            "lng": "4.436489293326531"
+        },
+        "name": "Rotterdam Airport P3 (Parkeren en vliegen)",
+        "overview_city": "Rotterdam",
+        "rate_day": "3000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "400",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "30 min. \u20ac 2,50\n1 uur   \u20ac 4,00\n1,5 uur  \u20ac 6,00\n2 uur   \u20ac 8,00\n3 uur   \u20ac 9,50\n4 uur   \u20ac 11,00, daarna elk uur \u20ac 1,50 erbij\nNa 10 uur : 1 dag \u20ac 30,00, daarna \u20ac 5,00 per iedere 24 uur erbij.",
+        "type": "parking_area"
+    },
+    "parking_1549": {
+        "address": "O Palmestraat 1",
+        "city_id": "city_23",
+        "id": "parking_1549",
+        "location": {
+            "lat": "52.01324981071865",
+            "lng": "4.37904547414928"
+        },
+        "name": "Ikea Parkeergarage",
+        "overview_city": "Delft",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "8"
+            }
+        ],
+        "remark": "Gratis",
+        "type": "parking_garage"
+    },
+    "parking_1550": {
+        "address": "Willem Naghelstraat 1",
+        "city_id": "city_23",
+        "id": "parking_1550",
+        "location": {
+            "lat": "52.01428322708864",
+            "lng": "4.366106497861438"
+        },
+        "name": "Markt",
+        "overview_city": "Delft",
+        "rate_day": "1600",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Per 4 minuten: \u20ac 0,20 = \u20ac 3,00 p/u\nNa 2 uur :  per 12 minuten \u20ac 0,50 = \u20ac 2,50 p/u",
+        "type": "parking_garage"
+    },
+    "parking_1552": {
+        "address": "Paarden Markt",
+        "city_id": "city_23",
+        "id": "parking_1552",
+        "location": {
+            "lat": "52.0163588907538",
+            "lng": "4.35817279698032"
+        },
+        "name": "Paardenmarkt",
+        "overview_city": "Delft",
+        "rate_day": "1770",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1200",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1200",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_1556": {
+        "address": "Herenstraat",
+        "city_id": "city_50",
+        "id": "parking_1556",
+        "location": {
+            "lat": "52.056394079420976",
+            "lng": "4.336566734214784"
+        },
+        "name": "Herenstraat/ Willemstraat",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_1557": {
+        "address": "Zuidwal 14",
+        "city_id": "city_23",
+        "id": "parking_1557",
+        "location": {
+            "lat": "52.007956892023664",
+            "lng": "4.362638401605182"
+        },
+        "name": "Zuidpoort",
+        "overview_city": "Delft",
+        "rate_day": "1600",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "1e en 2e uur \u20ac 0,20 per 4 minuten= \u20ac 3,00 euro p/u \nVolgende uren: \u20ac 0,50 per 12 min = \u20ac 2,50 euro p/u",
+        "type": "parking_garage"
+    },
+    "parking_1558": {
+        "address": "Nobelaerstraat",
+        "city_id": "city_50",
+        "id": "parking_1558",
+        "location": {
+            "lat": "52.05505852939943",
+            "lng": "4.334516494402124"
+        },
+        "name": "Nobelaerstraat",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_1560": {
+        "address": "Mallegat",
+        "city_id": "city_50",
+        "id": "parking_1560",
+        "location": {
+            "lat": "52.05489392678982",
+            "lng": "4.333774182438901"
+        },
+        "name": "Het Mallegat",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2100",
+                "time_limit": "180",
+                "time_start": "1800",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Bij parkeer-apparatuur geschikt voor een parkeertijd van 3.00 uur.",
+        "type": "parking_area"
+    },
+    "parking_1561": {
+        "address": "Gasthuissteeg",
+        "city_id": "city_23",
+        "id": "parking_1561",
+        "location": {
+            "lat": "52.008514114290556",
+            "lng": "4.3608292516246365"
+        },
+        "name": "Gasthuisplaats",
+        "overview_city": "Delft",
+        "rate_day": "1770",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1000",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1200",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "310",
+                "time_end": "2359",
+                "time_start": "1200",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_1562": {
+        "address": "Phoenixstraat 29",
+        "city_id": "city_23",
+        "id": "parking_1562",
+        "location": {
+            "lat": "52.010662863487234",
+            "lng": "4.354736613847308"
+        },
+        "name": "Phoenix",
+        "overview_city": "Delft",
+        "rate_day": "3000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "1e en 2e uur \u20ac 0,20 per 4 minuten= \u20ac 3,00 euro p/u \nDe dagkaart, 2-dagenkaart en weekkaart zijn alleen online verkrijgbaar.",
+        "type": "parking_garage"
+    },
+    "parking_1563": {
+        "address": "Schoolstraat",
+        "city_id": "city_50",
+        "id": "parking_1563",
+        "location": {
+            "lat": "52.055874260261824",
+            "lng": "4.332520493814855"
+        },
+        "name": "Schoolstraat",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1700",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "6"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_1566": {
+        "address": "Dr. H. Colijnlaan",
+        "city_id": "city_50",
+        "id": "parking_1566",
+        "location": {
+            "lat": "52.03925",
+            "lng": "4.320037"
+        },
+        "name": "Piramideplein /P+R Station Rijswijk",
+        "overview_city": "Rijswijk",
+        "parking_owner": " ",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Gratis.",
+        "type": "parking_pr"
+    },
+    "parking_1567": {
+        "address": "Leeuwestein",
+        "city_id": "city_23",
+        "id": "parking_1567",
+        "location": {
+            "lat": "52.0004971463165",
+            "lng": "4.36222344187935"
+        },
+        "name": "Woonboulevard Leeuwestein",
+        "overview_city": "Delft",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "8"
+            }
+        ],
+        "remark": "Gratis",
+        "type": "parking_area"
+    },
+    "parking_1581": {
+        "address": "Motoren weg",
+        "city_id": "city_23",
+        "id": "parking_1581",
+        "location": {
+            "lat": "51.98989",
+            "lng": "4.36427"
+        },
+        "name": "P+R Delft Zuid",
+        "overview_city": "Delft",
+        "parking_owner": " ",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "8"
+            }
+        ],
+        "type": "parking_pr"
+    },
+    "parking_16514": {
+        "city_id": "city_344",
+        "id": "parking_16514",
+        "location": {
+            "lat": "52.04524502515806",
+            "lng": "4.392005674536449"
+        },
+        "overview_city": "Pijnacker-Nootdorp",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0730",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0730",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0730",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2130",
+                "time_start": "0730",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2130",
+                "time_start": "0730",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0730",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1830",
+                "time_start": "0830",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_26044": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/lange-kleiweg",
+        "city_id": "city_50",
+        "id": "parking_26044",
+        "location": {
+            "lat": "52.036411086209064",
+            "lng": "4.329430737774032"
+        },
+        "name": "Lange Kleiweg ",
+        "overview_city": "Rijswijk",
+        "rate_day": "750",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_30705": {
+        "city_id": "city_3",
+        "id": "parking_30705",
+        "location": {
+            "lat": "52.0519334327638",
+            "lng": "4.352930309756857"
+        },
+        "name": "Familiepark Drievliet",
+        "overview_city": "Den Haag",
+        "rate_day": "700",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "700",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_37297": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/scheldestraat",
+        "city_id": "city_3",
+        "id": "parking_37297",
+        "location": {
+            "lat": "52.074171756781176",
+            "lng": "4.323519027740417"
+        },
+        "name": "Scheldestraat",
+        "overview_city": "Den Haag",
+        "rate_day": "1250",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_3753": {
+        "address": "Troelstralaan 7h",
+        "city_id": "city_23",
+        "id": "parking_3753",
+        "location": {
+            "lat": "51.99811",
+            "lng": "4.353694"
+        },
+        "name": "In de Hoven",
+        "overview_city": "Delft",
+        "rate_day": "850",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2000",
+                "time_start": "0730",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2000",
+                "time_start": "0730",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2000",
+                "time_start": "0730",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2100",
+                "time_start": "0730",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2100",
+                "time_start": "0730",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2000",
+                "time_start": "0730",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "1030",
+                "weekday": "7"
+            }
+        ],
+        "remark": "LET OP :Eerste 3 uur GRATIS ! 4e uur  \u20ac 1,90\nVanaf 5e uur : \u20ac 1,50 per uur.\nOpeningstijden PARKEERDEK\nmaandag t/m zaterdag                  8.00 \u2013 20.00 uur\nzondag                                        10.00 \u2013 18.00 uur\nOpeningstijden PARKEERGARAGE\nmaandag t/m zaterdag                  8.00 \u2013 22.00 uur\nzondag                                        10.00 \u2013 20.00 uur\nUitrijden: 24/7",
+        "type": "parking_garage"
+    },
+    "parking_38046": {
+        "city_id": "city_344",
+        "id": "parking_38046",
+        "location": {
+            "lat": "52.003801377234645",
+            "lng": "4.442675774296845"
+        },
+        "name": "Keijzershof Pijnacker",
+        "overview_city": "Pijnacker-Nootdorp",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2030",
+                "time_start": "0800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1830",
+                "time_start": "1200",
+                "weekday": "7"
+            }
+        ],
+        "remark": "LET OP :  Eerste 2 uur gratis,\ndaarna \u20ac 2,00 per uur",
+        "type": "parking_garage"
+    },
+    "parking_4417": {
+        "address": "Tuinstraat",
+        "city_id": "city_50",
+        "id": "parking_4417",
+        "location": {
+            "lat": "52.05646750776817",
+            "lng": "4.335026473771677"
+        },
+        "name": "Schoolstraat",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1700",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "6"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_4418": {
+        "address": "Sir Winston Churchilllaan 301",
+        "city_id": "city_50",
+        "id": "parking_4418",
+        "location": {
+            "lat": "52.037726377428285",
+            "lng": "4.321712381703492"
+        },
+        "name": "Eisenhowerplein",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_limit": "180",
+                "time_start": "0900",
+                "weekday": "5"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_46962": {
+        "book_url": "https://www.mobypark.com/nl/parkeerplaats/135?utm_source=prettigparkeren&utm_medium=affiliate&utm_campaign=nederland",
+        "city_id": "city_3",
+        "id": "parking_46962",
+        "location": {
+            "lat": "52.0445639",
+            "lng": "4.3756756"
+        },
+        "name": "Carlo",
+        "overview_city": "Den Haag",
+        "rate_day": "283",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "283",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Beschikbare informatie is indicatief. Ga voor de meest actuele informatie over beschikbaarheid, tarieven en minimale parkeerduur naar de reserveringspagina.",
+        "type": "parking_book"
+    },
+    "parking_46963": {
+        "book_url": "https://www.mobypark.com/nl/parkeerplaats/826?utm_source=prettigparkeren&utm_medium=affiliate&utm_campaign=nederland",
+        "city_id": "city_2",
+        "id": "parking_46963",
+        "location": {
+            "lat": "51.9411253",
+            "lng": "4.4004909"
+        },
+        "name": "Middleby",
+        "overview_city": "Rotterdam",
+        "rate_day": "1500",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Beschikbare informatie is indicatief. Ga voor de meest actuele informatie over beschikbaarheid, tarieven en minimale parkeerduur naar de reserveringspagina.",
+        "type": "parking_book"
+    },
+    "parking_46964": {
+        "book_url": "https://www.mobypark.com/nl/parkeerplaats/415?utm_source=prettigparkeren&utm_medium=affiliate&utm_campaign=nederland",
+        "city_id": "city_23",
+        "id": "parking_46964",
+        "location": {
+            "lat": "52.013515",
+            "lng": "4.3660919"
+        },
+        "name": "angelique",
+        "overview_city": "Delft",
+        "rate_day": "1500",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Beschikbare informatie is indicatief. Ga voor de meest actuele informatie over beschikbaarheid, tarieven en minimale parkeerduur naar de reserveringspagina.",
+        "type": "parking_book"
+    },
+    "parking_46965": {
+        "book_url": "https://www.mobypark.com/nl/parkeerplaats/1138?utm_source=prettigparkeren&utm_medium=affiliate&utm_campaign=nederland",
+        "city_id": "city_23",
+        "id": "parking_46965",
+        "location": {
+            "lat": "52.0107652",
+            "lng": "4.3470645"
+        },
+        "name": "Bram",
+        "overview_city": "Delft",
+        "rate_day": "1000",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1000",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Beschikbare informatie is indicatief. Ga voor de meest actuele informatie over beschikbaarheid, tarieven en minimale parkeerduur naar de reserveringspagina.",
+        "type": "parking_book"
+    },
+    "parking_46966": {
+        "book_url": "https://www.mobypark.com/nl/parkeerplaats/1546?utm_source=prettigparkeren&utm_medium=affiliate&utm_campaign=nederland",
+        "city_id": "city_3",
+        "id": "parking_46966",
+        "location": {
+            "lat": "52.069245",
+            "lng": "4.3264166"
+        },
+        "name": "Tremayne",
+        "overview_city": "Den Haag",
+        "rate_day": "1500",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "1500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Beschikbare informatie is indicatief. Ga voor de meest actuele informatie over beschikbaarheid, tarieven en minimale parkeerduur naar de reserveringspagina.",
+        "type": "parking_book"
+    },
+    "parking_5323": {
+        "city_id": "city_62",
+        "id": "parking_5323",
+        "location": {
+            "lat": "52.08086426327899",
+            "lng": "4.397138357162476"
+        },
+        "name": "Damplein",
+        "overview_city": "Leidschendam-Voorburg",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_limit": "120",
+                "time_start": "0700",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_limit": "120",
+                "time_start": "0700",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_limit": "120",
+                "time_start": "0700",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_limit": "120",
+                "time_start": "0700",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2200",
+                "time_limit": "120",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_limit": "120",
+                "time_start": "0700",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_limit": "120",
+                "time_start": "0700",
+                "weekday": "6"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_5389": {
+        "city_id": "city_410",
+        "id": "parking_5389",
+        "location": {
+            "lat": "52.1468680025638",
+            "lng": "4.387836456298828"
+        },
+        "name": "Duinrell",
+        "overview_city": "Wassenaar",
+        "rate_day": "900",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "900",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Parkeermunt van \u20ac 9,00 kopen bij de kassa.",
+        "type": "parking_area"
+    },
+    "parking_5528": {
+        "city_id": "city_23",
+        "id": "parking_5528",
+        "location": {
+            "lat": "52.00356655506381",
+            "lng": "4.371512532234192"
+        },
+        "name": "begraafplaats Jaffa",
+        "overview_city": "Delft",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "60",
+                "time_end": "1700",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "60",
+                "time_end": "1700",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "60",
+                "time_end": "1700",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "60",
+                "time_end": "1700",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "60",
+                "time_end": "1700",
+                "time_start": "0900",
+                "weekday": "5"
+            }
+        ],
+        "remark": "LET OP :Na het 1e uur \u20ac 1,90 per uur !",
+        "type": "parking_area"
+    },
+    "parking_5700": {
+        "city_id": "city_410",
+        "id": "parking_5700",
+        "location": {
+            "lat": "52.145235230444264",
+            "lng": "4.404562711715698"
+        },
+        "name": "Stadhoudersplein",
+        "overview_city": "Wassenaar",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "6"
+            }
+        ],
+        "remark": "LET OP : Alleen parkeren op plaatsen, die met een blauwe markering zijn aangeduid !MAXIMALE PARKEERTIJD (varieert van 30 tot 120 minuten !)\nGebruik blauwe parkeerschijf verplicht!\nLees de borden goed !",
+        "type": "parking_area"
+    },
+    "parking_5701": {
+        "city_id": "city_410",
+        "id": "parking_5701",
+        "location": {
+            "lat": "52.14531446428791",
+            "lng": "4.395191628319708"
+        },
+        "name": "Luifelbaan",
+        "overview_city": "Wassenaar",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "7"
+            }
+        ],
+        "remark": "LET OP : Alleen parkeren op plaatsen, die met een blauwe markering zijn aangeduid !MAXIMALE PARKEERTIJD (varieert van 30 tot 120 minuten !)\nGebruik blauwe parkeerschijf verplicht!\nLees de borden goed !",
+        "type": "parking_garage"
+    },
+    "parking_5702": {
+        "city_id": "city_410",
+        "id": "parking_5702",
+        "location": {
+            "lat": "52.14709184568785",
+            "lng": "4.391559362411499"
+        },
+        "name": "Berkhei",
+        "overview_city": "Wassenaar",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "1800",
+                "time_start": "0900",
+                "weekday": "6"
+            }
+        ],
+        "remark": "LET OP : Alleen parkeren op plaatsen, die met een blauwe markering zijn aangeduid !MAXIMALE PARKEERTIJD (varieert van 30 tot 120 minuten !)\nGebruik blauwe parkeerschijf verplicht!\nLees de borden goed !",
+        "type": "parking_area"
+    },
+    "parking_5840": {
+        "city_id": "city_50",
+        "id": "parking_5840",
+        "location": {
+            "lat": "52.06766893528453",
+            "lng": "4.331091642379761"
+        },
+        "name": "Laakweg",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_6053": {
+        "city_id": "city_50",
+        "id": "parking_6053",
+        "location": {
+            "lat": "52.04796760403008",
+            "lng": "4.330659806728363"
+        },
+        "name": "Generaal Spoorlaan 2",
+        "overview_city": "Rijswijk",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "7"
+            }
+        ],
+        "remark": "LET OP : Eerste twee uur \u20ac 0,00. daarna \u20ac 1,50 per uur !",
+        "type": "parking_unknown"
+    },
+    "parking_6155": {
+        "city_id": "city_20790",
+        "id": "parking_6155",
+        "location": {
+            "lat": "52.02061",
+            "lng": "4.43561"
+        },
+        "name": "P+R Station Pijnacker Centrum (Pijnacker)",
+        "overview_city": "Pijnacker",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_pr"
+    },
+    "parking_6156": {
+        "city_id": "city_20790",
+        "id": "parking_6156",
+        "location": {
+            "lat": "52.00526",
+            "lng": "4.44713"
+        },
+        "name": "P+R Station Pijnacker-Zuid (Pijnacker)",
+        "overview_city": "Pijnacker",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_pr"
+    },
+    "parking_6185": {
+        "city_id": "city_21911",
+        "id": "parking_6185",
+        "location": {
+            "lat": "52.09013",
+            "lng": "4.369969"
+        },
+        "name": "P+R Station Den Haag Mariahoeve (Voorburg)",
+        "overview_city": "Voorburg",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_pr"
+    },
+    "parking_6186": {
+        "city_id": "city_21911",
+        "id": "parking_6186",
+        "location": {
+            "lat": "52.08284",
+            "lng": "4.365721"
+        },
+        "name": "P+R Station Voorburg 't Loo Wilgendreef (Voorburg)",
+        "overview_city": "Voorburg",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_pr"
+    },
+    "parking_6187": {
+        "city_id": "city_21911",
+        "id": "parking_6187",
+        "location": {
+            "lat": "52.08139",
+            "lng": "4.366314"
+        },
+        "name": "P+R Station Voorburg 't Loo Sint Martinuslaan (Voorburg)",
+        "overview_city": "Voorburg",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_pr"
+    },
+    "parking_6590": {
+        "address": "Rijnstraat 8",
+        "city_id": "city_3",
+        "id": "parking_6590",
+        "location": {
+            "lat": "52.078772649720065",
+            "lng": "4.32368443356404"
+        },
+        "name": "Rijnstraat",
+        "overview_city": "Den Haag",
+        "rate_day": "3000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "36 minuten of een gedeelte hiervan\t\u20ac 2,00",
+        "type": "parking_garage"
+    },
+    "parking_6591": {
+        "address": "Schedeldoekshaven 100",
+        "city_id": "city_3",
+        "id": "parking_6591",
+        "location": {
+            "lat": "52.07713495619067",
+            "lng": "4.319470666192956"
+        },
+        "name": "Wijnhaven Centrum/voorheen Turfmarkt",
+        "overview_city": "Den Haag",
+        "rate_day": "2500",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0630",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0630",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0630",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0630",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0630",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0800",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Hele dag parkeren voor \u20ac 7,00 : \n-geldig maandag t/m vrijdag\n-minimaal 6 uur parkeren\n-inrijden tussen 7.30 en 8.30 uur\n-uitrijden vanaf 13.30 uur\nWeekendvoordeel \u20ac 1,50 per uur.",
+        "type": "parking_garage"
+    },
+    "parking_6603": {
+        "address": "Vaz Diasdreef 30",
+        "city_id": "city_3",
+        "id": "parking_6603",
+        "location": {
+            "lat": "52.06769925109093",
+            "lng": "4.396687496681352"
+        },
+        "name": "Station Leidschenveen haven",
+        "overview_city": "Den Haag",
+        "rate_day": "900",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": ".Dagkaart \u20ac 9,00.",
+        "type": "parking_area"
+    },
+    "parking_6604": {
+        "address": "Henri Faasdreef ",
+        "city_id": "city_3",
+        "id": "parking_6604",
+        "location": {
+            "lat": "52.066283228514514",
+            "lng": "4.398702358474793"
+        },
+        "name": "Station Leidschenveen haven",
+        "overview_city": "Den Haag",
+        "rate_day": "900",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Dagkaart \u20ac 9,00.",
+        "type": "parking_garage"
+    },
+    "parking_6605": {
+        "address": "Emmy Belinfantedreef 66",
+        "city_id": "city_3",
+        "id": "parking_6605",
+        "location": {
+            "lat": "52.06282304131812",
+            "lng": "4.403619030163554"
+        },
+        "name": "Leidschenhof",
+        "overview_city": "Den Haag",
+        "rate_day": "1000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "LET OP:\n1 uur\tGratis\n2 uren\t\u20ac 0,50\n3 uren\t\u20ac 1,50\nVolgende uren\t\u20ac 1,50\n1 dag\t\u20ac 10,00",
+        "type": "parking_garage"
+    },
+    "parking_6606": {
+        "address": "Spui 70",
+        "city_id": "city_3",
+        "id": "parking_6606",
+        "location": {
+            "lat": "52.077151166820165",
+            "lng": "4.3195028459938385"
+        },
+        "name": "Parking Stadhuis ",
+        "overview_city": "Den Haag",
+        "rate_day": "3000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0700",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0700",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0700",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0700",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0700",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "0100",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "1130",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6613": {
+        "address": "Zwarteweg 40",
+        "city_id": "city_3",
+        "id": "parking_6613",
+        "location": {
+            "lat": "52.08034709369648",
+            "lng": "4.321350321426394"
+        },
+        "name": "Helicon",
+        "overview_city": "Den Haag",
+        "parking_owner": "q-park",
+        "rate_day": "2800",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "36 minuten of een gedeelte hiervan\t\u20ac 2,00",
+        "type": "parking_garage"
+    },
+    "parking_6614": {
+        "address": "Rijswijkseweg 27",
+        "available_spots": "1089",
+        "city_id": "city_3",
+        "id": "parking_6614",
+        "location": {
+            "lat": "52.06964142243213",
+            "lng": "4.326467457672152"
+        },
+        "name": "Laakhaven",
+        "overview_city": "Den Haag",
+        "parking_owner": "q-park",
+        "rate_day": "3000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "353",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "17 minuten of een gedeelte hiervan\t\u20ac 1,00\nAvondtarief (geldig van 17.30 - 07.00 uur)\t\u20ac 8,00\nNS tarief\t\u20ac 7,00\nMaximaal dagtarief (geldig van 07.00 - 17.30 uur)\t\u20ac 30,00",
+        "type": "parking_garage"
+    },
+    "parking_6616": {
+        "address": "Van Alphenstraat 102 TO",
+        "available_spots": "137",
+        "city_id": "city_3",
+        "id": "parking_6616",
+        "location": {
+            "lat": "52.07854",
+            "lng": "4.343986"
+        },
+        "name": "Laan van NOI",
+        "overview_city": "Den Haag",
+        "parking_owner": "q-park",
+        "rate_day": "1483",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "243",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Maximaal dagtarief treinreizigers\t\u20ac 6.00",
+        "type": "parking_pr"
+    },
+    "parking_6622": {
+        "address": "Prinses Irenestraat 6",
+        "available_spots": "614",
+        "city_id": "city_3",
+        "id": "parking_6622",
+        "location": {
+            "lat": "52.08267579896651",
+            "lng": "4.325809679263443"
+        },
+        "name": "New Babylon",
+        "overview_city": "Den Haag",
+        "rate_day": "2800",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "333",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "36 minuten of een gedeelte hiervan \u20ac 2,00",
+        "type": "parking_garage"
+    },
+    "parking_6630": {
+        "city_id": "city_3",
+        "id": "parking_6630",
+        "location": {
+            "lat": "52.0540936598795",
+            "lng": "4.387766718864441"
+        },
+        "name": "De Venen",
+        "overview_city": "Den Haag",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "170",
+                "time_end": "2359",
+                "time_start": "0900",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "170",
+                "time_end": "2359",
+                "time_start": "0900",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "170",
+                "time_end": "2359",
+                "time_start": "0900",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "170",
+                "time_end": "2359",
+                "time_start": "0900",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "170",
+                "time_end": "2359",
+                "time_start": "0900",
+                "weekday": "5"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_6631": {
+        "city_id": "city_3",
+        "id": "parking_6631",
+        "location": {
+            "lat": "52.067329273912975",
+            "lng": "4.397888034582138"
+        },
+        "name": "Station Leidschenveen garage",
+        "overview_city": "Den Haag",
+        "rate_day": "900",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "90",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Dagkaart \u20ac 9,00.",
+        "type": "parking_garage"
+    },
+    "parking_6632": {
+        "city_id": "city_3",
+        "id": "parking_6632",
+        "location": {
+            "lat": "52.04747",
+            "lng": "4.350876"
+        },
+        "name": "P+R Hoornwijk (Den Haag)",
+        "overview_city": "Den Haag",
+        "rate_day": "500",
+        "rates": [
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "is_rate_day": "1",
+                "parking_allowed": "1",
+                "rate_1st_hour": "500",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "P+R Hoornwijck is 24 uur per dag geopend. \nU kunt gebruik maken van een voordelige P+R kaart. \nU parkeert uw auto en reist verder per HTM tram of bus. \nHet basistarief is 5 euro voor een auto en een persoon. \nMeereizende personen betalen een euro per persoon extra.",
+        "type": "parking_pr"
+    },
+    "parking_6635": {
+        "city_id": "city_3",
+        "id": "parking_6635",
+        "location": {
+            "lat": "52.05483",
+            "lng": "4.390987"
+        },
+        "name": "P+R Ypenburg (Den Haag)",
+        "overview_city": "Den Haag",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Op P+R Station Ypenburg parkeert u gratis. Er zijn 4 oplaadpunten voor elektrische auto's. Vanaf dit parkeerterrein reist u met de trein in 8 minuten van Station Ypenburg naar station Den Haag Centraal.",
+        "type": "parking_pr"
+    },
+    "parking_6637": {
+        "city_id": "city_3",
+        "id": "parking_6637",
+        "location": {
+            "lat": "52.080165358222196",
+            "lng": "4.335833787918091"
+        },
+        "name": "WTC The Hague",
+        "overview_city": "Den Haag",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6638": {
+        "city_id": "city_3",
+        "id": "parking_6638",
+        "location": {
+            "lat": "52.06436454701581",
+            "lng": "4.402899742126465"
+        },
+        "name": "'t Hoge Veen Leidschenveen",
+        "overview_city": "Den Haag",
+        "rate_day": "2500",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "0",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "LET OP : \n1e en 2e uur gratis. \n3e uur \u20ac 1,- \nVervolgens \u20ac 3,- per uur.\nMax. dagtarief \u20ac 25,-",
+        "type": "parking_garage"
+    },
+    "parking_6639": {
+        "city_id": "city_3",
+        "id": "parking_6639",
+        "location": {
+            "lat": "52.07797956092941",
+            "lng": "4.320507645606995"
+        },
+        "name": "Turfmarkt",
+        "overview_city": "Den Haag",
+        "rate_day": "2000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6669": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/de-carpentierstraat",
+        "city_id": "city_3",
+        "id": "parking_6669",
+        "location": {
+            "lat": "52.0853705",
+            "lng": "4.3364368"
+        },
+        "name": "De Carpentierstraat A",
+        "overview_city": "Den Haag",
+        "rate_day": "1250",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "250",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_6671": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/haagsche-toren ",
+        "city_id": "city_3",
+        "id": "parking_6671",
+        "location": {
+            "lat": "52.0715861",
+            "lng": "4.3242723"
+        },
+        "name": "Haagse Toren",
+        "overview_city": "Den Haag",
+        "rate_day": "1000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6678": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/trekvlietplein?source=ttip",
+        "city_id": "city_3",
+        "id": "parking_6678",
+        "location": {
+            "lat": "52.07205726496225",
+            "lng": "4.32655583701785"
+        },
+        "name": "Trekvlietplein",
+        "overview_city": "Den Haag",
+        "rate_day": "1000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_area"
+    },
+    "parking_6697": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/carpentierstraat-b\u00a0",
+        "city_id": "city_3",
+        "id": "parking_6697",
+        "location": {
+            "lat": "52.084742",
+            "lng": "4.337436"
+        },
+        "name": "De Carpentierstraat B",
+        "overview_city": "Den Haag",
+        "rate_day": "1000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "1800",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "0800",
+                "time_start": "0000",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "150",
+                "time_end": "1800",
+                "time_start": "0800",
+                "weekday": "7"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "50",
+                "time_end": "2359",
+                "time_start": "1800",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6704": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/delft-station",
+        "city_id": "city_23",
+        "id": "parking_6704",
+        "location": {
+            "lat": "52.007742691584795",
+            "lng": "4.357937263754252"
+        },
+        "name": "Delft Station",
+        "overview_city": "Delft",
+        "rate_day": "1000",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6712": {
+        "book_url": "https://parkbee.com/nl/parkeergarage/rotterdam-airport",
+        "city_id": "city_2",
+        "id": "parking_6712",
+        "location": {
+            "lat": "51.9476875",
+            "lng": "4.4360806"
+        },
+        "name": "Rotterdam Airport",
+        "overview_city": "Rotterdam",
+        "rate_day": "1800",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    },
+    "parking_6780": {
+        "city_id": "city_23",
+        "id": "parking_6780",
+        "location": {
+            "lat": "51.99737836666018",
+            "lng": "4.33940535117506"
+        },
+        "name": "Parkeergarage Reinier de Graaf",
+        "overview_city": "Delft",
+        "rate_day": "600",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "200",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "remark": "Vanaf 15 tot 30 minuten parkeren: \u20ac 1,00\nVanaf 30 minuten tot 1 uur parkeren: \u20ac 2,00\nVanaf 1 tot 1,5 uur parkeren: \u20ac 3,00\nVanaf 1,5 tot 2 uur parkeren: \u20ac 4,00\nVanaf 2 tot 2,5 uur parkeren: \u20ac 5,00\nVanaf 2,5 uur parkeren: \u20ac 6,00 (het maximale dagtarief)",
+        "type": "parking_garage"
+    },
+    "parking_8600": {
+        "city_id": "city_23",
+        "id": "parking_8600",
+        "location": {
+            "lat": "52.014520668473445",
+            "lng": "4.3503010256251855"
+        },
+        "name": "Prinsenhofgarage",
+        "overview_city": "Delft",
+        "rate_day": "1600",
+        "rates": [
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "1"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "2"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "3"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "4"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "5"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "6"
+            },
+            {
+                "parking_allowed": "1",
+                "rate_1st_hour": "300",
+                "time_end": "2359",
+                "time_start": "0000",
+                "weekday": "7"
+            }
+        ],
+        "type": "parking_garage"
+    }
+}
